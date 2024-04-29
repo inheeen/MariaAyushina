@@ -23,6 +23,8 @@ $color-blue: #7398CD
 $color-orange: #E28460
 $color-grey: #D7D7D7
 
+body
+    overflow-x: hidden
 .container
     position: relative
     max-width: 1140px
@@ -208,12 +210,14 @@ $color-grey: #D7D7D7
 .second-section
     min-height: 700px
     position: relative
+    overflow: hidden
     &__container
         padding-top: 32px
     &__title
         margin-bottom: 40px
     &__cards-box
         display: inline-flex
+        justify-content: center
         margin-bottom: 45px
     &__cards-item
         margin-right: 55px
@@ -228,7 +232,7 @@ $color-grey: #D7D7D7
     &__first-elipse
         position: absolute
         top: 60px
-        right: -200px
+        left: 1100px
     &__second-elipse
         position: absolute
         top: 330px
@@ -236,7 +240,7 @@ $color-grey: #D7D7D7
 
 .cards-item
     position: relative
-    width: 360px
+    width: 320px
     height: 360px
     background: $color-grey
     border-radius: 10px
@@ -249,6 +253,7 @@ $color-grey: #D7D7D7
     &__text
         width: 280px
         font-size: 36px
+        font-weight: bold
         text-align: center
         transform: rotate(90deg)
         position: absolute
@@ -272,6 +277,7 @@ $color-grey: #D7D7D7
         font-size: 18px
         span
             font-size: 48px
+            font-weight: bold
 
 .third-section
     min-height: 660px
@@ -297,7 +303,7 @@ $color-grey: #D7D7D7
         position: absolute
         top: 170px
         left: 90px
-        z-index: -1
+        z-index: -4
     &__figure
         position: absolute
         top: 250px
@@ -307,6 +313,7 @@ $color-grey: #D7D7D7
         position: absolute
         top: -60px
         right: -50px
+        z-index: -1
 
 .footer
     &__img
@@ -321,3 +328,218 @@ $color-grey: #D7D7D7
     &__title
         margin-bottom: 20px
 
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .main-section
+        min-height: 690px
+    .main-section__second-elipse
+        top: 550px
+    .left-wrapper
+        img
+            width: 750px
+        &__rectangle-blue
+            width: 500px
+            height: 200px
+        &__rectangle-orange
+            width: 550px
+            height: 200px
+            left: -50px
+        &__rectangle-grey
+            width: 500px
+            height: 200px
+    .right-wrapper
+        right: 5px
+    .main-section__first-elipse
+        right: -30px
+
+    .second-section
+        min-height: 600px
+        &__cards-box
+            display: flex
+            justify-content: center
+    .cards-item
+        width: 285px
+        height: 300px
+        margin-right: 20px
+    .cards-item__img
+        height: 270px
+    .cards-item__text
+        font-size: 30px
+        top: 135px
+        right: -50px
+    .second-section__first-elipse
+        left: 830px
+        top: 300px
+    .second-section__second-elipse
+        top: 100px
+
+    .third-section__container
+        padding-left: 40px
+    .third-section__right-wrapper
+        max-width: 450px
+@media (max-width: 991px)
+    .container
+        width: 720px
+    .main-section
+        min-height: 547px
+    .nav-menu
+        z-index: 2
+    .left-wrapper
+        left: -20px
+        img
+            width: 570px
+        &__rectangle-blue
+            width: 430px
+            height: 150px
+        &__rectangle-orange
+            width: 440px
+            height: 150px
+            left: -20px
+        &__rectangle-grey
+            width: 430px
+            height: 140px
+    .right-wrapper
+        width: 300px
+        top: 100px
+        &__title
+            font-size: 55px
+        &__text
+            font-size: 16px
+            margin-bottom: 15px
+        &__icons-box
+            padding: 0px
+            
+    .main-section__first-elipse
+        right: -70px
+        top: -180px
+        z-index: 1
+
+    .main-section__second-elipse
+        right: -120px
+        top: 880px
+
+    .buttons
+        &__main-btn
+            width: 140px
+            height: 50px
+            font-size: 14px
+            margin-right: 15px
+            padding: 0px
+        img
+            width: 40px
+        p
+            font-size: 16px
+
+    .second-section
+        min-height: 510px
+        &__container
+        paddin-top: 0px
+        &__title
+            font-size: 55px
+            margin-bottom: 20px
+        &__cards-box
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+    .cards-item
+        width: 285px
+        height: 300px
+        margin-right: 20px
+    .cards-item__img
+        height: 270px
+    .cards-item__text
+        font-size: 30px
+        top: 127px
+        right: -80px
+    .icons-item
+        &__img
+            width: 46px
+        &__text
+            font-size: 14px
+            span
+                font-size: 36px
+    .second-section__second-elipse
+        top: -80px
+        z-index: -1
+
+    .third-section
+        min-height: 510px
+    .third-section__left-title
+        font-size: 55px
+        margin-right: 40px
+    .third-section__right-title
+        font-size: 55px
+        margin-bottom: 20px
+    .third-section__container
+        padding-left: 10px
+        padding-top: 20px
+    .third-section__right-wrapper
+        max-width: 420px
+    .third-section__text
+        font-size: 16px
+        margin-bottom: 30px
+    .third-section__first-elipse
+            top: 120px
+            left: 70px
+            width: 200px
+            height: 200px
+    .elipse
+        &__subtract
+            width: 180px
+            height: 180px
+            ackground: #f0f0f0
+            border-radius: 200px
+            &_big
+                width: 150px
+                height: 150px
+              
+    .third-section__second-elipse
+        top: -120px
+        right: -80px
+    .third-section__figure
+        height: 200px
+        top: 200px
+
+    .footer
+        min-height: 200px
+        &__img
+            width: 550px
+        &__wrapper
+            max-width: 400px
+        &__title
+            font-size: 55px
+            margin-bottom: 10px
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+
+@media (max-width: 575px)
+    .container
+        width: 100%
+
+
+
+
+        .elipse
+    width: 256px
+    height: 256px
+    border-radius: 200px
+    background: linear-gradient( 143deg, rgba(237,123 ,80 ,0.5 ) 14%, rgba(72, 138,234 ,0.5 ) 53%, rgba(44,44,44, 0.5 ) 85%)
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 300px
+        height: 300px
+    &__subtract
+        width: 180px
+        height: 180px
+        background: #f0f0f0
+        border-radius: 200px
+        &_big
+            width: 205px
+            height: 205px
+        &_white
+            background-color: white
